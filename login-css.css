@@ -1,0 +1,81 @@
+body{
+	background-image: linear-gradient(to right bottom, #c2b039, #e58f2b, #ff6347, #ff2d76, #eb12b2);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height :100%;
+}
+#title-logo{
+	width: 600px;
+	display: block;
+	font-size: xx-large;
+	position: relative;
+	top: 150px;
+	left: 100px;
+	line-height: 40px;
+}
+#heading{
+	font-size: 60px;
+	font-family: Consolas ,Century Gothic;	
+	word-spacing: -10px;
+}
+#login{
+	position: relative;
+	float: right;
+	top: -140px;
+	margin-right: 10px;
+	width: 400px;
+	height: 500px;
+	background: #f7f7f7;
+	box-shadow: 0,0,5px rgb(0,0,0,0.3);
+	border-radius: 20px 10px 10px 10px;
+}
+#login-details{
+	position: relative;
+	top: 50px;
+	left: 40px;
+}
+.fields{
+	border-left :none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid black;
+	background: #f7f7f7;
+	position: absolute;
+	left: 140px;
+}
+
+label{
+	font-size: 22px;
+}
+
+input{
+	outline: none;
+}
+#submit-button:hover{
+		cursor: pointer;
+		transform: scale(1.1);
+}
+#submit-button{
+	width: 75px;
+	height: 35px;
+	color :blue;
+	box-shadow: 0 0 5px rgba(0,0,0,0,0.5);
+	border-radius: 5px;
+	font-size: 14px;
+}
+#LclickHere{
+	background:yellow;
+	font-weight: bold;
+	font-family: inkfree;
+	font-style: underline;
+	color :black;
+	font-size: 14px;
+	cursor: pointer;
+}
+#signupLink{
+	position: relative;
+	top: 30px;
+	margin-left:60px;
+	font-size: small;
+	color :purple;
+}

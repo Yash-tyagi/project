@@ -1,0 +1,61 @@
+body{
+	background-image: linear-gradient(to right bottom, #c2b039, #e58f2b, #ff6347, #ff2d76, #eb12b2);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height :100%;
+}
+
+.lfields{
+	border-left :none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid black;
+	background: #f7f7f7;
+	position: absolute;
+	left: 170px;
+}
+#signup{
+	position: absolute;
+	top: 87px;
+	left: 931px;
+	margin-right: 10px;
+	width: 400px;
+	height: 500px;
+	background: #f7f7f7;
+	box-shadow: 0,0,5px rgb(0,0,0,0.3);
+	border-radius: 0px 10px 10px 10px;
+	display:none;
+}
+#signup-details{
+	top: 200px;
+	left: 40px;
+	margin-left: 20px;
+}
+#create-account-button:hover{
+		cursor: pointer;
+		transform: scale(1.1);
+}
+#create-account-button{
+	width: 120px;
+	height: 35px;
+	color :blue;
+	box-shadow: 0 0 5px rgba(0,0,0,0,0.5);
+	border-radius: 5px;
+	font-size: 14px;
+}
+#loginlink{
+	position: relative;
+	top: 16px;
+	margin-left:50px;
+	font-size: small;
+	color :purple;
+}
+#SclickHere{
+	background:yellow;
+	font-weight: bold;
+	font-family: inkfree;
+	font-style: underline;
+	color :black;
+	font-size: 14px;
+	cursor: pointer;
+}

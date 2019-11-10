@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login form</title>
+	<link rel="stylesheet" type="text/css" href="login-css.css">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#LclickHere").click(function(){
+			$("#signup").slideDown("slow");
+		});
+			});
+	$(document).ready(function(){
+		$("#SclickHere").click(function(){
+			$("#signup").slideUp("fast");
+		});
+			});
+</script>
+
+</head>
+<body>
+<div>
+		<div id="title-logo">
+			<p id="title">
+			<span id="heading">Shops at ur door...</span>
+			<br>the Only Place For ALL Your Daily Needs
+			With Reasonable Rates Along With All time
+			Heavy Discounts!!!
+			</p>
+		</div>
+	<div id="login">
+		<form action="##" method="post">
+		<div id="image">
+			<img src="mens-cover.png" alt="mens-cover" width="400px" height="200px">	
+		</div>
+	<div id="login-details">
+		<label for name="username">Username:</label>
+		<input type="text" name="username" placeholder="Yash123" class="fields" required><br><br><br><br>
+		
+		<div id="userError"></div>
+		
+		<label for name="password">Password:</label>
+		<input type="password" name="password" class="fields" required><br><br><br>
+		<center><input type="submit" name="submit" id="submit-button" onclick="return checkFunction()"></center><br>
+	</div>
+	<div id="signupLink">
+		<p>Don't have an account?...<span id="LclickHere">Click here</span> to signup</p>
+	</div>
+	</form>
+	</div>
+<div id="signup">
+	<form action="##" method="post">
+	<center><h1 style="color:red">Signup form</h1></center>
+	<br><br>
+	<div id="signup-details">
+		<label for name="fname">first name:</label>
+		<input type="text" name="fname" class="lfields"><br><br><br>
+		<label for name="lanme">last name:</label>
+		<input type="text" name="lname" class="lfields"><br><br><br>
+		<label for name="npass">New password:</label>
+		<input type="password" name="npass" class="lfields"><br><br><br><br>
+		<center><input type="button" name="button" value="create account" id="create-account-button">
+		</center>
+		<div id="loginlink">
+		<p>Already have an account?...<span id="SclickHere">Click here</span> to login</p>
+	</div>
+	</div>
+	</form>
+</div>
+
+</div>
+
+</body>
+</html>
