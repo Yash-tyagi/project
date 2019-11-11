@@ -2,17 +2,21 @@ body{
 	background-image: linear-gradient(to right bottom, #c2b039, #e58f2b, #ff6347, #ff2d76, #eb12b2);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height :100%;
 }
 #title-logo{
-	width: 600px;
+	width: 700px;
 	display: block;
 	font-size: xx-large;
 	position: relative;
 	top: 150px;
-	left: 100px;
+	left: 80px;
 	line-height: 40px;
 }
+#title{
+	border-left: 3px solid red;
+	padding-left: 5px;
+}
+
 #heading{
 	font-size: 60px;
 	font-family: Consolas ,Century Gothic;	

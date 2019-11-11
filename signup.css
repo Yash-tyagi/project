@@ -1,9 +1,3 @@
-body{
-	background-image: linear-gradient(to right bottom, #c2b039, #e58f2b, #ff6347, #ff2d76, #eb12b2);
-	background-size: cover;
-	background-repeat: no-repeat;
-	height :100%;
-}
 
 .lfields{
 	border-left :none;
@@ -31,11 +25,11 @@ body{
 	left: 40px;
 	margin-left: 20px;
 }
-#create-account-button:hover{
+#newLoginButton:hover{
 		cursor: pointer;
 		transform: scale(1.1);
 }
-#create-account-button{
+#newLoginButton{
 	width: 120px;
 	height: 35px;
 	color :blue;
