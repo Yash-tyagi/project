@@ -3,7 +3,7 @@ function validation(){
 	//$(".error").remove(); 
 	var nameRegex=/^[A-Za-z ]{3,}$/
 	var emailRegex= /^[A-Za-z0-9._ ]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/
-	var passwordRegex=/^[A-Za-z0-9@._ ]+$/
+	var passwordRegex=/^[A-Za-z0-9@._ ]{3,}$/
 	var name=document.getElementById("name").value;
 	var email=document.getElementById("email").value;
 	var password=document.getElementById("password").value;

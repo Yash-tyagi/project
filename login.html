@@ -12,71 +12,9 @@
 	
 	<script type="text/javascript" src="validation.js"></script>
 	<script type="text/javascript" src="jQuery.js"></script>
-	<script>
-	// $(document).ready(function(){
-	// 	$("#LclickHere").click(function(){
-	// 		$("#signup").slideDown("slow");
-	// 	});
-			
-	// 	$("#SclickHere").click(function(){
-	// 		$("#signup").slideUp("fast");
-	// 	});
-			
 	
-	// 	$("#date").datepicker();
-	
-	// });
-</script>
-<script type="text/javascript">
-// 	function validation(){
-// 	//$(".error").remove(); 
-// 	var nameRegex=/^[A-Za-z ]{3,}$/
-// 	var emailRegex= /^[A-Za-z0-9._ ]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/
-// 	var passwordRegex=/^[A-Za-z0-9@._ ]+$/
-// 	var name=document.getElementById("name").value;
-// 	var email=document.getElementById("email").value;
-// 	var password=document.getElementById("password").value;
-// 	var date=document.getElementById("date").value;
-// 	var address=document.getElementById("address").value;
-// 	if(!nameRegex.test(name)){
-// 		document.getElementById("name-error").innerHTML="**no valid name";
-// 		return false;
-// 	}else{
-// 		document.getElementById("name-error").innerHTML="";
-// 	}
-
-// 	if(!emailRegex.test(email)){
-// 		document.getElementById("email-error").innerHTML="email wrong format";
-// 		return false;
-// 	}else{
-// 		document.getElementById("email-error").innerHTML="";
-// 	}
-
-// 	if(!passwordRegex.test(password)){
-// 		document.getElementById("password-error").innerHTML="**try a cool password man";
-// 		return false;
-// 	}else{
-// 		document.getElementById("password-error").innerHTML="";
-// 	}
-// 	if (date.length<1) {
-// 		document.getElementById("date-error").innerHTML="**field is mandatory";
-// 		return false;
-// 	}else{
-// 		document.getElementById("date-error").innerHTML="";
-// 	}
-// 	if(address.length<5){
-// 		document.getElementById("address-error").innerHTML="**field is mandatory";
-// 		return false;
-// 	}else{
-// 		document.getElementById("address-error").innerHTML="";
-// 	}
-	
-// }
-
-</script>
 </head>
 <body>
-<div>
 		<div id="title-logo">
 			<p id="title">
 			<span id="heading">Shops at ur door...</span>
@@ -86,7 +24,7 @@
 			</p>
 		</div>
 	<div id="login">
-		<form action="ppp.php" method="post">
+		<form action="loginPhp.php" method="post">
 		<div id="image">
 			<img src="mens-cover.png" alt="mens-cover" width="400px" height="200px">	
 		</div>
@@ -101,6 +39,9 @@
 		<center><input type="submit" name="submit" id="submit-button"></center><br>
 	</div>
 	</form>
+	<?php
+	if(isset($_POST['msg'])) echo $_POST['msg'];
+	?>
 	<div id="signupLink">
 		<p>Don't have an account?...<span id="LclickHere">Click here</span> to signup</p>
 	</div>
@@ -110,7 +51,7 @@
 	<br><br>
 	
 	<div id="signup-details">
-		<form action="php.php" method="post" onsubmit="return validation()">
+		<form action="signupPhp.php" method="post" onsubmit="return validation()">
 		<label for name="name">Name:</label>
 		<input type="text" name="name" class="lfields" id="name">
 		<br><span id="name-error" style="color:red"></span>
@@ -119,15 +60,15 @@
 		<input type="text" name="email" class="lfields" id="email"><br>
 		<span id="email-error" style="color:red"></span>
 		<br><br>
-		<label for name="pass">New password:</label>
-		<input type="password" name="pass" class="lfields" id="password"><br>
+		<label for name="password">New password:</label>
+		<input type="password" name="password" class="lfields" id="password"><br>
 		<span id="password-error" style="color: red"></span>
 		<br><br>
-		<label id="dob">DOB:</label>
-		<input type="text" id="date" class="lfields" id="dob"><br>
+		<label for name="date">DOB:</label>
+		<input type="text" id="date" class="lfields" id="dob" name="date"><br>
 		<span id="date-error" style="color: red"></span>
 		<br><br>
-		<label for name="address">Address:</label>
+		<label for name="address">Address:</label> 
 		<input type="text" name="address" class="lfields" id="address"><br>
 		<span id="address-error" style="color: red"></span>
 		<br><br>
@@ -140,8 +81,6 @@
 		<p>Already have an account?...<span id="SclickHere">Click here</span> to login</p>
 	</div>
 	</div>
-
-</div>
 
 </div>
 

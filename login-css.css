@@ -1,6 +1,6 @@
 body{
 	background-image: linear-gradient(to right bottom, #c2b039, #e58f2b, #ff6347, #ff2d76, #eb12b2);
-	background-size: cover;
+	background-size: 300% 300%;
 	background-repeat: no-repeat;
 }
 #title-logo{
@@ -23,9 +23,9 @@ body{
 	word-spacing: -10px;
 }
 #login{
-	position: relative;
-	float: right;
-	top: -140px;
+	position: absolute;
+	top: 89px;
+	left: 931px;
 	margin-right: 10px;
 	width: 400px;
 	height: 500px;
